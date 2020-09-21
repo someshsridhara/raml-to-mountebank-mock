@@ -1,0 +1,136 @@
+[
+    {
+        "completeRelativeUri": "/foobar",
+        "httpMethod": "get",
+        "traits": [
+            {
+                "name": "Trackable",
+                "headers": [
+                    {
+                        "name": "X-TrackingID",
+                        "description": "Consumer system's tracking ID for this request (if any).\nThis is optional and purely for troubleshooting / analysis purposes.\n",
+                        "type": [
+                            "string"
+                        ],
+                        "required": false,
+                        "example": null
+                    }
+                ]
+            },
+            {
+                "name": "Errorable",
+                "headers": []
+            }
+        ],
+        "uriParams": [],
+        "queryParams": [],
+        "request": {
+            "examples": []
+        },
+        "responses": [
+            {
+                "code": "200",
+                "headers": [],
+                "examples": [
+                    {
+                        "name": null,
+                        "contentType": "application/vnd.api+json",
+                        "value": "{\n  \"data\": {\n    \"type\": \"Foo\",\n    \"id\": \"1\",\n    \"attributes\": {\n      \"message\": \"Foo Bar!\"\n    }\n  }\n}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "completeRelativeUri": "/foobar",
+        "httpMethod": "post",
+        "traits": [
+            {
+                "name": "Trackable",
+                "headers": [
+                    {
+                        "name": "X-TrackingID",
+                        "description": "Consumer system's tracking ID for this request (if any).\nThis is optional and purely for troubleshooting / analysis purposes.\n",
+                        "type": [
+                            "string"
+                        ],
+                        "required": false,
+                        "example": null
+                    }
+                ]
+            },
+            {
+                "name": "Errorable",
+                "headers": []
+            }
+        ],
+        "uriParams": [],
+        "queryParams": [],
+        "request": {
+            "examples": [
+                {
+                    "name": null,
+                    "contentType": "application/vnd.api+json",
+                    "value": "{\n  \"data\": {\n    \"type\": \"Foo\",\n    \"attributes\": {\n      \"message\": \"Foo Bar!\"\n    }\n  }\n}"
+                }
+            ]
+        },
+        "responses": [
+            {
+                "code": "200",
+                "headers": [],
+                "examples": [
+                    {
+                        "name": null,
+                        "contentType": "application/vnd.api+json",
+                        "value": "{\n  \"data\": {\n    \"type\": \"Foo\",\n    \"id\": \"1\",\n    \"attributes\": {\n      \"message\": \"Foo Bar!\"\n    }\n  }\n}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "completeRelativeUri": "/foobar/{id}",
+        "httpMethod": "get",
+        "traits": [
+            {
+                "name": "Trackable",
+                "headers": [
+                    {
+                        "name": "X-TrackingID",
+                        "description": "Consumer system's tracking ID for this request (if any).\nThis is optional and purely for troubleshooting / analysis purposes.\n",
+                        "type": [
+                            "string"
+                        ],
+                        "required": false,
+                        "example": null
+                    }
+                ]
+            },
+            {
+                "name": "Errorable",
+                "headers": []
+            }
+        ],
+        "uriParams": [
+            "id"
+        ],
+        "queryParams": [],
+        "request": {
+            "examples": []
+        },
+        "responses": [
+            {
+                "code": "200",
+                "headers": [],
+                "examples": [
+                    {
+                        "name": null,
+                        "contentType": "application/vnd.api+json",
+                        "value": "{\n  \"data\": {\n    \"type\": \"Foo\",\n    \"id\": \"1\",\n    \"attributes\": {\n      \"message\": \"Foo Bar!\"\n    }\n  }\n}"
+                    }
+                ]
+            }
+        ]
+    }
+]
